@@ -1,0 +1,207 @@
+.hamburger {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+    
+    display: none;
+    
+    font-size: 2.5rem;
+    line-height: 5rem;
+    
+    top: 0;
+    right: 0;
+    
+}
+.burger {
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger__patty {
+  width: 40px;
+  height: 4px;
+  margin: 0 0 8px 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.burger__patty:last-child {
+  margin-bottom: 0;
+}
+
+
+/*
+.burger--close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.burger--close .burger__patty:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(10px, 8px);
+          transform: rotate(45deg) translate(10px, 8px);
+}
+.burger--close .burger__patty:nth-child(2) {
+  opacity: 0;
+}
+.burger--close .burger__patty:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(9px, -7px);
+          transform: rotate(-45deg) translate(9px, -7px);
+}
+*/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+}
+.menu--active {
+  visibility: visible;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.menu__list {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  list-style-type: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu__list--active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.menu__list h2 {
+  padding: 100px;
+}
+.menu__item {
+  -webkit-transform: translate3d(1000px, 0, 0);
+          transform: translate3d(1000px, 0, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu__item--active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.menu .menu__item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.menu .menu__item:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.menu .menu__item:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.menu .menu__item:nth-child(4) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+.menu .menu__item:nth-child(5) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.menu .menu__item:nth-child(6) {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+.menu .menu__item:nth-child(7) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.menu .menu__item:nth-child(8) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+.menu .menu__item:nth-child(9) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+.menu .menu__item:nth-child(10) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+.menu .menu__item:nth-child(11) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+
+
+/*
+.burger {
+    position: absolute;
+    right: 25px;
+    top: 21px;
+}
+*/
+.burger {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.burger.burger--close {
+    position: fixed !important;
+}
+
+.burger .burger__patty {
+  background: black;
+}
+.burger--close .burger__patty {
+  background: black;
+}
+.menu__list {
+/*    border-top: 4px solid black;*/
+    
+    border-bottom: 4px solid black;
+}
+
+.menu__list a {
+    color: #000;
+    margin: 12px;
+    padding: 0px;
+    cursor: pointer;
+}
+.menu__list a:hover {
+    color: #a9a9a9; 
+}
+
+
+
+.burger p:nth-child(1) {
+    display: block !important;
+}
+.burger p:nth-child(2) {
+    display: none !important;
+}
+.burger--close p:nth-child(1) {
+    display: none !important;
+}
+.burger--close p:nth-child(2) {
+    display: block !important;
+}
