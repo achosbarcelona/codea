@@ -32,8 +32,11 @@
 <body id="frame_body">
 
     <div id="content" class="ayuntament">
+        <!--
         <iframe id="intro1" src="https://player.vimeo.com/video/250305064?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <iframe id="intro2" src="https://player.vimeo.com/video/250304791?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="intro2" src="https://player.vimeo.com/video/250304791?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+        <video id="intro1" src="img/projects/14_ayuntament/gat_HD.mp4" controls></video>
+        <video id="intro2" src="img/projects/14_ayuntament/ovella_HD.mp4" controls></video>
         
         <div id="play_button1">
                 <?php 

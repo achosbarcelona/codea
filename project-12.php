@@ -16,11 +16,11 @@
 ?>
 
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-	<title>Codea Studio</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <title>Codea Studio</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/infinite.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
@@ -68,11 +68,14 @@
             <img class="forty" src="img/projects/12_almarge/2.png">
             <img class="sixty" src="img/projects/12_almarge/3.png">
 
-            <iframe class="sixty" src="https://player.vimeo.com/video/242774786?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <iframe class="forty" src="https://player.vimeo.com/video/248116209?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <!-- <iframe class="sixty" src="https://player.vimeo.com/video/242774786?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe class="forty" src="https://player.vimeo.com/video/248116209?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+            <video class="sixty" src="img/projects/12_almarge/4.mp4" autoplay loop nocontrols></video>
+            <video class="forty" src="img/projects/12_almarge/5.mp4" autoplay loop nocontrols></video>
 
             <img class="half" src="img/projects/12_almarge/6.png">
-            <iframe class="videohalf" src="https://player.vimeo.com/video/248116745?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <video class="videohalf" src="img/projects/12_almarge/7.mp4" autoplay loop nocontrols></video>
+            <!-- <iframe class="videohalf" src="https://player.vimeo.com/video/248116745?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
         </div>
 
         </br></br>
