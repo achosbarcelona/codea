@@ -9,7 +9,7 @@ body {
     background-color: #eee;
 }
 body, h1, h2, h3, h4, h5, p, a, li, div, figure, figcaption {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
 body {
@@ -32,18 +32,18 @@ body, h1, h2, h3, h4, h5, h6, h7, h8, h9, p, a, li, ul, div {
 }
 
 /*
-body::-webkit-scrollbar { 
-    display: none; 
+body::-webkit-scrollbar {
+    display: none;
 }
-#scroll_wrapper::-webkit-scrollbar { 
-    display: none; 
+#scroll_wrapper::-webkit-scrollbar {
+    display: none;
 }
 */
 
 
 
 
-/* mobile iOS debug 
+/* mobile iOS debug
 –––––––––––––––––––––––––––
 –––––––––––––––––––––––––––
 –––––––––––––––––––––––––*/
@@ -97,7 +97,7 @@ body::-webkit-scrollbar {
     height: 74px;
     width: 100%;
     background-color: #eee;
-    
+
     position: fixed;
     left: 0;
     bottom: 0;
@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
     width: auto;
     margin-left: 0px;
     transform: translate(-14px,-14px);
-    
+
     margin-right: -35px;
 }
 #menu span {
@@ -204,12 +204,12 @@ body::-webkit-scrollbar {
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
-    
+
     display: -webkit-flex; /* Safari */
     -webkit-justify-content: space-between; /* Safari 6.1+ */
     display: flex;
     justify-content: space-between;
-    
+
     text-align: justify;
     -moz-text-align-last: justify;
     text-align-last: justify;
@@ -232,7 +232,7 @@ body::-webkit-scrollbar {
     display: inline;
     float: left;
     text-decoration: none;
-    
+
 }
 #project_nav li a, #exit {
     cursor: pointer;
@@ -440,8 +440,8 @@ figure.effect.hover p {
     width: 100%;
     height: 100%;
     top: 0;
-    
-    
+
+
 /*    transform: translateY(85px);*/
     height: 100vh;
     overflow-x: hidden !important;
@@ -475,7 +475,7 @@ figure.effect.hover p {
 }
 
 ::selection {
-    color: black; 
+    color: black;
     background: none;
 }
 
@@ -546,7 +546,7 @@ figure.effect.hover p {
     -o-transition: opacity 0.35s;
     transition: opacity 0.35s;
     text-transform: uppercase;
-    
+
     border: 3px solid black;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -630,26 +630,26 @@ figure.effect.hover p {
     width: 50%;
     display: inline;
     float: left;
-    
+
     border-bottom: 4px solid #000;
 }
-#imagewrapper img:nth-child(1), 
+#imagewrapper img:nth-child(1),
 #imagewrapper img:nth-child(2) {
     border-top: 4px solid #000;
 }
-#imagewrapper img:nth-child(1), 
+#imagewrapper img:nth-child(1),
 #imagewrapper img:nth-child(3),
-#imagewrapper img:nth-child(5), 
+#imagewrapper img:nth-child(5),
 #imagewrapper img:nth-child(7),
-#imagewrapper img:nth-child(9), 
+#imagewrapper img:nth-child(9),
 #imagewrapper img:nth-child(11) {
     border-right: 2px solid #000;
 }
-#imagewrapper img:nth-child(2), 
+#imagewrapper img:nth-child(2),
 #imagewrapper img:nth-child(4),
-#imagewrapper img:nth-child(6), 
+#imagewrapper img:nth-child(6),
 #imagewrapper img:nth-child(8),
-#imagewrapper img:nth-child(10), 
+#imagewrapper img:nth-child(10),
 #imagewrapper img:nth-child(12) {
     border-left: 2px solid #000;
 }
@@ -680,7 +680,7 @@ figure.effect.hover p {
     position: fixed;
     top: 0;
     left: calc(50% - 2px);
-    
+
     height: 100vh;
     width: 3px;
 
@@ -706,21 +706,21 @@ figure.effect.hover p {
 
 #dropdown {
 
-    
+
 /*    height: 0px;*/
-    
+
 /*
     display: inline-block;
     transform: translate(0, -200px);
     z-index: -100000;
 */
-    
+
 
 /*
     margin-top: -200px;
     padding-top: 200px;
 */
-    
+
 }
 
 #intro, #text, #introduction, #credits, #dropdown, #content {
@@ -794,15 +794,37 @@ figure.effect.hover p {
 
 .forty {
     width: 40% !important;
-    height: 600px;
+    height: 60vh;
     float: left;
+    border-top: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
-
+.forty img, .sixty img {
+    max-width: 100%;
+}
 .sixty {
     width: 60% !important;
-    height: 600px;
+    height: 60vh;
     float: left;
+    border-top: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
+/* .seventy {
+    width: 70%
+}
+.thirty {
+    width: 30%
+} */
 
 /* ojo volver a meter para centrar foto de estudio
 #text img {
@@ -894,7 +916,7 @@ figure.effect.hover p {
 }
 #hello {
     position: absolute;
-    transform: translate(calc(75vh * 0.8984088127295 - 60px),calc((75vh * 0.8984088127295) / -2));   
+    transform: translate(calc(75vh * 0.8984088127295 - 60px),calc((75vh * 0.8984088127295) / -2));
 }
 @media only screen and (max-width: 1150px) {
     #contact_hand {
@@ -1131,7 +1153,7 @@ figure.effect.hover p {
     }
     figure.effect p {
         display: none;
-    }  
+    }
 }
 
 
@@ -1139,7 +1161,7 @@ figure.effect.hover p {
 @media only screen and (min-width: 800px) and (max-width: 1150px) {
     figure.effect p {
         display: none;
-    }  
+    }
 }
 
 
@@ -1172,25 +1194,25 @@ figure.effect.hover p {
         padding-right: 15px;
         height: 66px;
     }
-    
+
     #menu, #iframe_menu {
         top:0 !important;
     }
-    
-    
+
+
     #exit {
         right: 15px;
     }
-    #menu span img, .logo a img {        
+    #menu span img, .logo a img {
 /*
         height: 1.6666rem;
         margin-left: 2px;
-        
+
 */
         height: 4rem;
         margin-left: 0;
         transform: translate(-10px,-10px);
-        
+
     }
     .burger {
         right: 15px;
@@ -1208,7 +1230,7 @@ figure.effect.hover p {
     #iframe_container.open #scroll_wrapper.knock-knock {
         height: calc(100vh - 65px);
     }
-    
+
     .logo {
         left: 15px;
     }
@@ -1295,7 +1317,7 @@ figure.effect.hover p {
         background-size: cover;
         background-position: center;
     }
-    
+
     /*
     .grid.repeat figure:nth-child(4) {
         height: 40vh;
@@ -1407,7 +1429,7 @@ figure.effect figcaption {
     left: 0;
     height: 75px;
     width: 100vw;
-    
+
 }
 #overflow_container {
     width: 100vw;
@@ -1432,8 +1454,8 @@ svg {
     bottom: 0;
     left: 0;
     background-color: black;
-    
-    
+
+
     z-index: 0;
 }
 */
@@ -1490,6 +1512,6 @@ svg {
     bottom: 0;
     left: 0;
     background-color: black;
-    opacity: .5; 
+    opacity: .5;
 }
 */
