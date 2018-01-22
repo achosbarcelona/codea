@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php 
+<?php
   $ln = "en";
     isset($_GET['ln']) ? $ln = $_GET['ln'] : $ln = "en";
 
@@ -10,7 +10,7 @@
             break;
 
         case 'en':
-            include 'idiomas/en.php';        
+            include 'idiomas/en.php';
             break;
     }
 ?>
@@ -18,13 +18,13 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
 	<title>Codea Studio</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/infinite.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">
-    
+
     <script src="js/jquery.js"></script>
     <script src="js/projects.js"></script>
 </head>
@@ -35,20 +35,30 @@
         <!--
         <iframe id="intro1" src="https://player.vimeo.com/video/250305064?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <iframe id="intro2" src="https://player.vimeo.com/video/250304791?autoplay=0&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-        <video id="intro1" src="img/projects/14_ayuntament/gat_HD.mp4" controls></video>
-        <video id="intro2" src="img/projects/14_ayuntament/ovella_HD.mp4" controls></video>
-        
-        <div id="play_button1">
-                <?php 
-                        echo "<p><span class='hvr-wobble'>";
-                        echo $general['play'];
-                        echo "</span></p>";
-                ?>
+        <div class="videoswrap">
+            <div class="videowrap">
+                <video src="img/projects/14_ayuntament/gat_HD.mp4" class="video" nocontrols></video>
+                <button class="video-button play-button">
+                    <span class='hvr-wobble'>play</span>
+                </button>
+                <button class="video-button pause-button hidden">
+                    <span class='hvr-wobble'>pause</span>
+                </button>
+            </div>
+            <div class="videowrap">
+                <video src="img/projects/14_ayuntament/ovella_HD.mp4" class="video" nocontrols></video>
+                <button class="video-button play-button">
+                    <span class='hvr-wobble'>play</span>
+                </button>
+                <button class="video-button pause-button hidden">
+                    <span class='hvr-wobble'>pause</span>
+                </button>
+            </div>
         </div>
-        
+
         <div id="text">
             <div id="introduction">
-                <?php 
+                <?php
                         echo "<span class='underline'>";
                         echo $ayuntament['title'];
                         echo "&#46;&nbsp;";
@@ -59,20 +69,20 @@
                 ?>
             </div>
             <div id="credits" onclick="openCredits()">
-                <?php 
+                <?php
                         echo "<span id='plusminus'>&#43;</span>&nbsp;";
                         echo $general['credits'];
                 ?>
-                
+
             </div>
             <div id="dropdown" class="closed">
-                <?php 
+                <?php
                         echo "<br>";
                         echo $ayuntament['credits'];
                 ?>
             </div>
         </div>
-            
+
         <!--
         <div id="imagewrapper">
             <img src="img/projects/13_ayuntament/1.jpg">
@@ -84,7 +94,28 @@
         </div>
         -->
     </div>
+    <script>
+        var playButtons = document.querySelectorAll('.play-button');
+        var pauseButtons = document.querySelectorAll('.pause-button');
 
+        for(var i = 0; i < playButtons.length; i++){
+            playButtons[i].addEventListener('click', function(e){
+                toggleButtons('pause', e);
+                e.target.parentNode.querySelector('.video').play();
+            });
+        }
+        for(var i = 0; i < pauseButtons.length; i++){
+            pauseButtons[i].addEventListener('click', function(e){
+                toggleButtons('play', e);
+                e.target.parentNode.querySelector('.video').pause();
+            });
+        }
+
+        function toggleButtons(type, ev){
+            ev.target.classList.add('hidden');
+            ev.target.parentNode.querySelector('.' + type + '-button').classList.remove('hidden');
+        }
+    </script>
     <script src="js/froogaloop.js"></script>
     <script src="js/vimeo.js"></script>
 

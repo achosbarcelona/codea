@@ -18,15 +18,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<<<<<<< HEAD
-    
     <title>Codea Studio</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-=======
-
-	<title>Codea Studio</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
->>>>>>> e78c7fe7663c0339f5796c0a351515a915452ac9
     <link rel="stylesheet" href="css/infinite.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hover.css">

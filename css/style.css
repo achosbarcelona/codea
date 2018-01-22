@@ -760,7 +760,9 @@ figure.effect.hover p {
 }
 
 /* david achos */
-
+.hidden {
+    display: none !important;
+}
 .borde {
     border-top: 4px solid #000;
     border-left: 2px solid #000;
@@ -818,6 +820,30 @@ figure.effect.hover p {
     background-color: white;
     display: flex;
     justify-content: center;
+}
+.videoswrap {
+    display: flex;
+}
+.videowrap {
+    position: relative;
+    flex: 1;
+}
+.videowrap video {
+    width: 100%;
+}
+.videowrap .video-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.videowrap .video-button::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
 }
 /* .seventy {
     width: 70%
