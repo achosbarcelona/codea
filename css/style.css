@@ -845,6 +845,30 @@ figure.effect.hover p {
     bottom: 0;
     content: '';
 }
+.video-flex {
+    display: flex;
+    width: 100%;
+}
+.video-wrap_auto {
+    display: flex;
+    justify-content: center;
+    height: 36.3vw;
+}
+.video-flex1__forty {
+    height: 100% !important;
+    border-top: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.video-flex1__sixty {
+    width: 64vw !important;
+    height: 36.3vw !important;
+    border-top: 2px solid #000;
+    border-bottom: 4px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
 /* .seventy {
     width: 70%
 }
